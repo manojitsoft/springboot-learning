@@ -1,0 +1,14 @@
+server:
+   port: 7777
+   
+spring:
+   application:
+      name: admin-server
+   boot:
+      admin:
+         discovery:
+           ignored-services: gateway
+   cloud:
+    consul:
+      host: localhost
+      port: 8500
